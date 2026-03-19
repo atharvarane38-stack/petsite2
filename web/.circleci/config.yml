@@ -1,0 +1,21 @@
+version: 2
+
+build:
+  jobs:
+    - build
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:16
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install
+      - run:
+          name: Build
+          command: npm run build
+      - run:
+          name: Deploy to Vercel
+          command: npm install -g vercel && vercel --token $VERCEL_TOKEN --prod
