@@ -762,11 +762,6 @@
   }
 }
 
-  z-index: 1;
-  max-width: 800px;
-  animation: fadeInDown 0.8s ease;
-}
-
 @keyframes fadeInDown {
   from {
     opacity: 0;
