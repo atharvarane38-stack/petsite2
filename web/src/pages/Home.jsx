@@ -274,7 +274,6 @@ function Home() {
 }
 
 export default Home;
-      <section className="features-section">
         <h2>Why Choose PetSite?</h2>
         <Row gutter={[30, 30]} className="features-grid">
           <Col xs={24} sm={12} md={6}>
